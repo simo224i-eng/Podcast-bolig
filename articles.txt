@@ -1,0 +1,29 @@
+# Bolius-artikler til oplæsning. Én URL pr. linje.
+# Linjer der starter med # ignoreres. Fjern # for at aktivere en linje.
+#
+# Bemærk: nogle URL'er nedenfor er bedste-gæt baseret på Bolius' URL-mønstre
+# og kan være forældede. Hvis main.py logger en 404 for en URL, så brug
+# `python -m src.main --find-topic skimmel` (eller et andet emne) til at finde
+# en aktuel URL via Bolius' søgning, og opdatér listen herunder.
+
+# === Skimmel og fugt — mest tvistintensive ===
+https://www.bolius.dk/skimmelsvamp-i-boligen-saadan-bekaemper-du-det-17522
+https://www.bolius.dk/fugt-i-kaelderen-saadan-loeser-du-problemet-19294
+https://www.bolius.dk/saadan-finder-og-fjerner-du-skimmelsvamp-17517
+https://www.bolius.dk/fugt-i-huset-aarsager-og-loesninger-16982
+
+# === Tag ===
+https://www.bolius.dk/tagets-levetid-saadan-vurderer-du-tagets-stand-17890
+https://www.bolius.dk/utaet-tag-find-laekagen-og-reparer-skaden-17456
+
+# === Fundament og sætningsskader ===
+https://www.bolius.dk/saetningsskader-saadan-vurderer-du-revner-i-husets-mure-17234
+https://www.bolius.dk/fundament-typer-og-tilstand-17890
+
+# === Installationer ===
+https://www.bolius.dk/elinstallationer-i-aeldre-huse-17234
+https://www.bolius.dk/vandinstallationer-levetid-og-typiske-problemer-17456
+
+# === Hustypologi ===
+https://www.bolius.dk/typehus-fra-1960erne-typiske-skader-17890
+https://www.bolius.dk/parcelhus-fra-1970erne-konstruktion-og-svagheder-17891

@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bolius-podcast"
+version = "0.1.0"
+description = "Generate a Danish podcast feed from Bolius articles using free TTS."
+requires-python = ">=3.11"
+license = { text = "MIT" }
+readme = "README.md"
+dependencies = [
+    "edge-tts==6.1.12",
+    "requests==2.32.3",
+    "beautifulsoup4==4.12.3",
+    "trafilatura==1.12.2",
+    "feedgen==1.0.0",
+    "lxml==5.3.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest==8.3.3"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.setuptools.packages.find]
+include = ["src*"]

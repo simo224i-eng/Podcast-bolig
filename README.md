@@ -22,7 +22,7 @@ pip install -r requirements.txt
 python -m src.main --verbose
 ```
 
-Det opretter `output/<slug>-<hash>.mp3` for hver ny artikel og skriver `output/feed.xml`. Allerede behandlede artikler (registreret i `state/processed.json`) springes over ved næste kørsel.
+Det opretter `docs/<slug>-<hash>.mp3` for hver ny artikel og skriver `docs/feed.xml`. Allerede behandlede artikler (registreret i `state/processed.json`) springes over ved næste kørsel.
 
 Andre flag:
 
@@ -46,7 +46,7 @@ python -m src.main --find-topic "tag levetid" --limit 5
 1. Push til GitHub.
 2. **Settings → Pages**:
    - **Source**: `Deploy from a branch`
-   - **Branch**: `main`, folder `/output`
+   - **Branch**: `main`, folder `/docs`
 3. Vent et minut. Din feed-URL bliver:
    ```
    https://<dit-brugernavn>.github.io/<repo-navn>/feed.xml
@@ -81,7 +81,7 @@ src/feed.py       RSS 2.0 + iTunes-tags via feedgen
 src/main.py       Orkestrering, state-tracking, CLI
 
 state/processed.json    Hvilke URL'er der allerede er konverteret
-output/                 mp3-filer + feed.xml (committes til repoet)
+docs/                 mp3-filer + feed.xml (committes til repoet)
 ```
 
 ### Designvalg

@@ -19,7 +19,9 @@ logger = logging.getLogger("bolius_podcast")
 
 ROOT = Path(__file__).resolve().parent.parent
 ARTICLES_FILE = ROOT / "articles.txt"
-OUTPUT_DIR = ROOT / "output"
+# GitHub Pages only supports / or /docs as the publishing folder, so we
+# write the public artefacts (mp3 + feed.xml) into docs/.
+OUTPUT_DIR = ROOT / "docs"
 STATE_DIR = ROOT / "state"
 STATE_FILE = STATE_DIR / "processed.json"
 FEED_FILE = OUTPUT_DIR / "feed.xml"

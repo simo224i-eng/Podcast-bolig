@@ -10,9 +10,19 @@ on:
         description: "edge-tts voice override (e.g. da-DK-ChristelNeural)"
         required: false
         default: ""
+  push:
+    branches: [main]
+    paths:
+      - "articles.txt"
+      - "src/**"
+      - ".github/workflows/generate.yml"
 
 permissions:
   contents: write
+
+concurrency:
+  group: generate-podcast
+  cancel-in-progress: false
 
 jobs:
   generate:
@@ -44,4 +54,4 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore: regenerate podcast episodes and feed"
-          file_pattern: "output/* state/processed.json"
+          file_pattern: "docs/* state/processed.json"

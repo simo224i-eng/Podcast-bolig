@@ -193,10 +193,13 @@ def cmd_run(args: argparse.Namespace) -> int:
         len(failures),
     )
     if failures:
-        logger.warning("Failed URLs:")
+        logger.warning("Failed URLs (these will be retried next run):")
         for f in failures:
             logger.warning("  %s", f)
-    return 0 if not failures else 1
+    # Always exit 0 — partial failures are expected (e.g. 404s for URLs
+    # that have changed) and must not stop the workflow from committing
+    # the episodes that *did* succeed.
+    return 0
 
 
 def cmd_find_topic(args: argparse.Namespace) -> int:

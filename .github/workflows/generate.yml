@@ -51,6 +51,7 @@ jobs:
           python -m src.main --verbose
 
       - name: Commit and push generated files
+        if: always()
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore: regenerate podcast episodes and feed"

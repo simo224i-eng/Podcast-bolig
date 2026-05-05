@@ -18,12 +18,13 @@ https://www.bolius.dk/utaet-tag-find-laekagen-og-reparer-skaden-17456
 
 # === Fundament og sætningsskader ===
 https://www.bolius.dk/saetningsskader-saadan-vurderer-du-revner-i-husets-mure-17234
-https://www.bolius.dk/fundament-typer-og-tilstand-17890
+# Disse er deaktiveret indtil aktuelle URL'er er fundet (brug --find-topic):
+# https://www.bolius.dk/fundament-typer-og-tilstand-17890
 
 # === Installationer ===
-https://www.bolius.dk/elinstallationer-i-aeldre-huse-17234
-https://www.bolius.dk/vandinstallationer-levetid-og-typiske-problemer-17456
+# https://www.bolius.dk/elinstallationer-i-aeldre-huse-17234
+# https://www.bolius.dk/vandinstallationer-levetid-og-typiske-problemer-17456
 
 # === Hustypologi ===
-https://www.bolius.dk/typehus-fra-1960erne-typiske-skader-17890
-https://www.bolius.dk/parcelhus-fra-1970erne-konstruktion-og-svagheder-17891
+# https://www.bolius.dk/typehus-fra-1960erne-typiske-skader-17890
+# https://www.bolius.dk/parcelhus-fra-1970erne-konstruktion-og-svagheder-17891
